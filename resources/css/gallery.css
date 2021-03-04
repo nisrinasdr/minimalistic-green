@@ -3,7 +3,7 @@
 img {vertical-align: middle;}
 
 #gallery {
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;

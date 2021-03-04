@@ -40,7 +40,7 @@ hr {
 
 /* The Couple */
 #theCouple {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -103,13 +103,11 @@ hr {
     background-color: rgb(170,189,169);
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 #saveTheDate {
     background-image: url('/resources/images/couple.jpg');
-    width: 65vw;
+    width: 65%;
     height: inherit;
     position: relative;
     background-position: center;
@@ -141,13 +139,13 @@ hr {
 .time {
     margin: 2em;
 }
-#location {
+/* #location {
     display: block;
-}
+} */
 
-#location, #location-2 {
-    width: 35vw;
-    height: inherit;
+#location{
+    width: 35%;
+    height: 100vh;
     background-color: whitesmoke;
 }
 
@@ -204,6 +202,7 @@ hr {
 
 /* Location Map */
 #location {
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -213,6 +212,7 @@ hr {
 iframe {
     -webkit-box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12); 
     box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12);
+    margin-bottom: 2em;
 }
 
 #location-2 {
@@ -233,6 +233,10 @@ iframe {
     z-index: 10;
 }
 
+#location-2 {
+    margin-bottom: 4em;
+}
+
 @media only screen and (max-width: 425px) {
     .theBride, .theGroom {
         width: 50%;
@@ -250,7 +254,7 @@ iframe {
 
     }
     .weddingCeremony {
-        width: 400px;
+        width: 500px;
     }
     
 
@@ -277,6 +281,7 @@ iframe {
     #location-2 {
         text-align: center;
         width: auto;
+        height: auto;
     }
 
     #location-small {
@@ -300,11 +305,11 @@ iframe {
 @media only screen and (max-width: 1400px) {
     /* Flower Background */
     .flower-left, .flower-right {
-        width: 40vw;
+        width: 35vw;
     }
 
     .flower-left-2, .flower-right-2 {
-        width: 30vw;
+        width: 25vw;
     }
 
     /* .dateContainer{
@@ -370,10 +375,10 @@ iframe {
 @media only screen and (max-width: 550px) {
     /* Flower Background */
     .flower-left, .flower-right {
-        width: 60vw;
+        width: 50vw;
     }
 
     .flower-left-2, .flower-right-2 {
-        width: 60vw;
+        width: 50vw;
     }
 }
