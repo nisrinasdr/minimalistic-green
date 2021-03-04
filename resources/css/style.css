@@ -162,6 +162,7 @@ hr {
     font-weight: 500;
     font-style: italic;
     margin: 1.5em;
+    font-weight: bold;
 }
 
 
@@ -212,7 +213,6 @@ hr {
 iframe {
     -webkit-box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12); 
     box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12);
-    margin-bottom: 2em;
 }
 
 #location-2 {
@@ -234,7 +234,7 @@ iframe {
 }
 
 #location-2 {
-    margin-bottom: 4em;
+    margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 425px) {
@@ -254,7 +254,7 @@ iframe {
 
     }
     .weddingCeremony {
-        width: 500px;
+        padding: 0.2em;
     }
     
 
@@ -274,7 +274,7 @@ iframe {
     }
 
     #saveTheDate {
-        width: auto;
+        width: 100%;
         display: block;
     }
 
@@ -348,7 +348,7 @@ iframe {
     }
 
     #saveTheDate {
-        width: 2000px;
+        width: 100%;
     }
 
     #location-2 {
