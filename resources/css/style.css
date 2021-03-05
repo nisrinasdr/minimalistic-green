@@ -47,7 +47,7 @@ hr {
     align-items: center;
     background-color: whitesmoke;
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .theCoupleContainer h1 {
@@ -98,6 +98,7 @@ hr {
 .countP {
     margin-right: 10px;
 }
+/* End of The Couple Section */
 
 /* The Time */
 #theTime {
@@ -140,9 +141,6 @@ hr {
 .time {
     margin: 2em;
 }
-/* #location {
-    display: block;
-} */
 
 #location{
     width: 35%;
@@ -218,7 +216,7 @@ iframe {
 
 #location-2 {
     display: none;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 
@@ -278,15 +276,120 @@ iframe {
     vertical-align: middle;
 }
 
+/* Form, music, and angpao */
+#guestMusicAngpao {
+    height: 80vh;
+    display: flex;
+}
+
+/* Guest List */
+#guestList {
+    width: 65%;
+    background-color: rgba(170,189,169, 0.9);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Form */
+#formContainer {
+    margin: 1em;
+}
+
+form {
+    width: 60%;
+    height: 63vh;
+    margin: auto;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12); 
+    box-shadow: 3px 5px 11px 5px rgba(0,0,0,0.12);
+    border-radius: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    align-self: flex-start;
+}
+
+.submitButton {
+    transition: background-color 0.7s;
+}
+
+.submitButton:hover {
+    background-color: rgb(170,189,169);
+    font-weight: bold;
+}
+
+/* End of form */
+
+#musicAngpao {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/resources/images/couple.jpg');
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#musicAngpao::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+}
+#music, #angpao {
+    position: relative;
+    z-index: 20;
+    margin: 1.3em;
+}
+
+.title {
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    display: inline;
+}
+
+#musicAngpaoSmall {
+    display: none;
+}
+
+#music {
+    height: 35%;
+}
+
+audio {
+    width: 75%;
+}
+
+#angpao {
+    height: 65%;
+}
+
+#qrCode {
+    height: 100%;
+}
+
+
+/* Footer */
 footer {
     height: 10%;
     text-align: center;
     padding: 0.5em;
-    background-color: rgba(170,189,169, 0.9);
+    background-color: whitesmoke;
 }
 
 footer a {
-    color: white;
+    color: rgb(170,189,169);
 }
 
 footer a:hover{
@@ -294,6 +397,9 @@ footer a:hover{
     text-decoration: none;
 }
 
+/* End of footer */
+
+/* Responsive */
 @media only screen and (min-width: 0) and (max-width: 425px) {
     .theBride, .theGroom {
         width: 50%;
@@ -308,7 +414,7 @@ footer a:hover{
         padding: 0.2em 1em;
         width: 55vw;
         height: 60vw;
-        overflow: scroll;
+        overflow: hidden;
         margin: 1em auto;
     }
     
@@ -441,11 +547,12 @@ footer a:hover{
         width: 40vw;
     }
     .weddingCeremony, .location {
-        margin: 1em;
+        margin: 0.3em;
+        width: 45%;
     }
     .dateContainer{
-        padding: 10px;
-        width: 60%;
+        padding: 5px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -459,5 +566,45 @@ footer a:hover{
 
     .flower-left-2, .flower-right-2 {
         width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #guestList {
+        width: 100%;
+    }
+    #musicAngpao {
+        display: none;
+    }
+
+    #musicAngpaoSmall {
+        display: block;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+    audio {
+        width: 100%;
+    }
+    footer {
+        background-color:rgb(170,189,169);
+    }
+    footer a {
+        color:whitesmoke
+    }
+}
+
+@media only screen and (min-width:450px) and (max-width:900px) {
+    form {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    form {
+        width: 87%;
     }
 }

@@ -97,11 +97,6 @@
             </div>
         </section>
         
-        <section id="gallery2">
-            
-    
-
-        </section>
         <section id="gallery">
             <h1>Gallery</h1>
             <img class="flower-left-2" src="resources/images/flower-left.png" alt="">
@@ -148,6 +143,80 @@
                 <a class="right carousel-control" href="#slider" data-slide="next" role="button">
                     <span class="icon-next"></span>
                 </a>
+            </div>
+        </section>
+
+        <section id="guestMusicAngpao">
+            <div id="guestList">
+                <h1>Guest List</h1>
+                <form>
+                    <div id="formContainer">
+                        <div class="form-group">
+                            <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="message" rows="5" cols="50" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select name="confirmation" id="confirmation" class="form-control" required>
+                                <option value="Hadir">Hadir</option>
+                                <option value="Tidak Hadir">Tidak Hadir</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default submitButton">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="musicAngpao">
+                <div id="music">
+                    <div class="title-text">
+                        <p class="title">Music</p>
+                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                    </div>
+                    
+                    <audio controls controlsList="nodownload" autoplay>
+                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div id="angpao">
+                    <div class="title-text">
+                        <p class="title">Angpao</p>
+                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                    </div>
+                    
+                    <img class="qrCode" src="resources/images/qrcode.png" alt = "angpao qr code"/>
+                </div>
+            </div>
+        </section>
+        <!-- Angpao display for small screen -->
+        <section id="musicAngpaoSmall">
+            <div id="musicAngpaoSmallerSize">
+                <div id="music">
+                    <div class="title-text">
+                        <p class="title">Music</p>
+                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                    </div>
+                    
+                    <audio controls controlsList="nodownload">
+                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                </div>
+                <div id="angpao">
+                    <div class="title-text">
+                        <p class="title">Angpao</p>
+                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
+                    </div>
+                    
+                    <img class="qrCode" src="resources/images/qrcode.png" alt = "angpao qr code"/>
+                </div>
             </div>
         </section>
 
