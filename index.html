@@ -82,7 +82,8 @@
                     <p><em>Hotel Gran Mahakam, Jakarta</em></p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.585876208781!2d106.7954788!3d-6.2444205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9999a91c8ec9630e!2sHotel%20Gran%20Mahakam!5e0!3m2!1sid!2sid!4v1614782102715!5m2!1sid!2sid" 
                 width="80%" height="50%" style="border-radius:3%; border: 0; margin:2em" allowfullscreen="" loading="lazy"></iframe>
-                
+                    <p class="linkButtonTitle">You can't attend our wedding? Don't worry! You can still join us.</p>
+                    <button class="btn btn-default linkButton">Livestream Link</button>
             </div>
         </section>
 
@@ -93,7 +94,9 @@
                 <p>Please join us at</p>
                 <p><em>Hotel Gran Mahakam, Jakarta</em></p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.585876208781!2d106.7954788!3d-6.2444205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9999a91c8ec9630e!2sHotel%20Gran%20Mahakam!5e0!3m2!1sid!2sid!4v1614782102715!5m2!1sid!2sid" 
-            width="80%" height="60%" style="border-radius:3%; border: 0; margin:2em" allowfullscreen="" loading="lazy"></iframe>
+            width="80%" height="40%" style="border-radius:3%; border: 0; margin:2em" allowfullscreen="" loading="lazy"></iframe>
+                <p class="linkButtonTitle">You can't attend our wedding? Don't worry! You can still join us.</p>
+                <button class="btn btn-default linkButton">Livestream Link</button>
             </div>
         </section>
         
@@ -163,8 +166,8 @@
                         </div>
                         <div class="form-group">
                             <select name="confirmation" id="confirmation" class="form-control" required>
-                                <option value="Hadir">Hadir</option>
-                                <option value="Tidak Hadir">Tidak Hadir</option>
+                                <option value="Hadir">I will be there</option>
+                                <option value="Tidak Hadir">Sorry, I can't attend</option>
                               </select>
                         </div>
                         <div class="form-group">
@@ -180,8 +183,8 @@
                         <img class="decoration" src="resources/images/decoration.png" alt = ""/>
                     </div>
                     
-                    <audio controls controlsList="nodownload" preload="auto" autoplay="true" crossorigin>
-                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg">
+                    <audio id="audioBig" controls controlsList="nodownload" loop> 
+                        <source src="resources/audio/bensound-sweet.mp3" type="audio/mpeg">
                       Your browser does not support the audio element.
                       </audio>
                 </div>
@@ -204,8 +207,8 @@
                         <img class="decoration" src="resources/images/decoration.png" alt = ""/>
                     </div>
                     
-                    <audio controls controlsList="nodownload">
-                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg">
+                    <audio id="audioSmall" controls controlsList="nodownload" loop>
+                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg" >
                       Your browser does not support the audio element.
                       </audio>
                 </div>
@@ -222,6 +225,9 @@
 
         <footer>
             <a href="http://www.freepik.com"><small>Flower decoration designed by BiZkettE1 / Freepik</small></a>
+            <a href="www.bensound.com"><small> | Music from Bensound</small></a>
         </footer>
+
+        <script src="./resources/js/audio.js"></script>
     </body>
 </html>
