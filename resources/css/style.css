@@ -47,6 +47,7 @@ hr {
     align-items: center;
     background-color: whitesmoke;
     position: relative;
+    overflow: scroll;
 }
 
 .theCoupleContainer h1 {
@@ -217,6 +218,7 @@ iframe {
 
 #location-2 {
     display: none;
+    overflow: scroll;
 }
 
 
@@ -237,7 +239,62 @@ iframe {
     margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 425px) {
+/* Gallery */
+#gallery {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#carousel > h1 {
+    margin-top: 5vh;
+    background-color: aqua;
+}
+
+#carousel {
+    height: 100%;
+}
+
+#slider .item{
+    height: 70vh;
+}
+
+#slider {
+    margin: 0 8vh 5vh 1em;
+    width: 80%;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+}
+
+.carousel-image {
+    margin: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+footer {
+    height: 10%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgba(170,189,169, 0.9);
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 0) and (max-width: 425px) {
     .theBride, .theGroom {
         width: 50%;
         margin-left: auto;
@@ -247,24 +304,22 @@ iframe {
         margin: 0.5em;
     }
     
-    .dateContainer{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
     .weddingCeremony {
-        padding: 0.2em;
+        padding: 0.2em 1em;
+        width: 55vw;
+        height: 60vw;
+        overflow: scroll;
+        margin: 1em auto;
     }
     
 
     /* Flower Background */
     .flower-left, .flower-right {
-        width: 60%;
+        width: 60vw;
     }
 
     .flower-left-2, .flower-right-2 {
-        width: 60%;
+        width: 60vw;
     }
 
 
@@ -275,26 +330,22 @@ iframe {
 
     #saveTheDate {
         width: 100%;
-        display: block;
+        height: auto;
     }
 
     #location-2 {
         text-align: center;
         width: auto;
-        height: auto;
     }
 
     #location-small {
         display: block;
     }
 
-    /* .weddingCeremony, .location {
-        margin: 1em;
-    } */
-
     /* Location */
     #location-2 {
         height: 120vh;
+        display: block;
     }
 
     #location {
@@ -302,26 +353,85 @@ iframe {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 425px) and (max-width: 550px) {
     /* Flower Background */
     .flower-left, .flower-right {
-        width: 35vw;
+        width: 50vw;
     }
 
     .flower-left-2, .flower-right-2 {
-        width: 25vw;
+        width: 50vw;
     }
 
-    /* .dateContainer{
+
+    .weddingCeremony {
+        width: 31vw;
+        height: auto;
+        margin: 1em auto;
+    }
+
+    #saveTheDate {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    } */
-    
+        height: auto;
+    }
+
+    #location-2 {
+        text-align: center;
+        width: auto;
+    }
+
+    #location-small {
+        display: block;
+    }
+
+    /* Location */
+    #location-2 {
+        height: 120vh;
+        display: block;
+    }
+
+    #location {
+        display: none;
+    }
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 550px) and (max-width: 800px) {
+    /* The Time */
+    #theTime {
+        height: auto;
+    }
+
+    .weddingCeremony {
+        margin: 1em auto;
+    }
+
+    #saveTheDate {
+        width: 100%;
+    }
+
+    #location-2 {
+        text-align: center;
+        width: auto;
+    }
+
+    #location-small {
+        display: block;
+    }
+
+    /* Location */
+    #location-2 {
+        height: 120vh;
+        display: block;
+    }
+
+    #location {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 900px) {
     /* Flower Background */
     .flower-left, .flower-right {
         width: 50vw;
@@ -341,44 +451,13 @@ iframe {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    /* The Time */
-    #theTime {
-        height: auto;
-    }
-
-    #saveTheDate {
-        width: 100%;
-    }
-
-    #location-2 {
-        text-align: center;
-        width: auto;
-    }
-
-    #location-small {
-        display: block;
-    }
-
-    /* Location */
-    #location-2 {
-        height: 120vh;
-        display: block;
-    }
-
-    #location {
-        display: none;
-    }
-
-}
-
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
     /* Flower Background */
     .flower-left, .flower-right {
-        width: 50vw;
+        width: 35vw;
     }
 
     .flower-left-2, .flower-right-2 {
-        width: 50vw;
+        width: 25vw;
     }
 }

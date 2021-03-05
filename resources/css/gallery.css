@@ -2,16 +2,7 @@
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-#gallery {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2em;
-    background-color: whitesmoke;
-    position: relative;
-}
+
 
 /* Slideshow container */
 .slideshow-container {
