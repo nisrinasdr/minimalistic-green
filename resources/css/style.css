@@ -1,3 +1,5 @@
+/* Universal styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +20,10 @@ h2 {
 }
 
 hr {
+    border-top: 1.5px solid rgb(170,189,169);
     margin: 1em 0;
 }
+/* End of Universal Styles */
 
 /* Flower Background */
 .flower-left {
@@ -171,7 +175,8 @@ hr {
 }
 
 .linkButtonTitle {
-    margin: 1em;
+    margin: auto;
+    padding: 1em;
     max-width: 80%;
     text-align: center;
 }
@@ -307,7 +312,7 @@ iframe {
 
 /* Guest List */
 #guestList {
-    width: 65%;
+    /* width: 65%; */
     background-color: rgba(170,189,169, 0.9);
     padding: 1em 1em 2em 1em;
     display: flex;
@@ -323,7 +328,7 @@ iframe {
 }
 
 form {
-    width: 60%;
+    width: auto;
     height: 63vh;
     margin: auto;
     background-color: whitesmoke;
@@ -352,7 +357,7 @@ label {
 /* End of form */
 
 #musicAngpao {
-    width: 35%;
+    /* width: 35%; */
     display: flex;
     flex-direction: column;
     background-image: url('/resources/images/couple.jpg');
@@ -370,6 +375,7 @@ label {
     background-color: whitesmoke;
     opacity: 0.8;
 }
+
 #music, #angpao {
     position: relative;
     z-index: 20;
@@ -406,9 +412,12 @@ audio {
 
 /* Footer */
 footer {
-    height: 10%;
+    grid-area: footer;
+    display: block;
+    position: relative;
     text-align: center;
     padding: 0.5em;
+    margin: auto;
     background-color: whitesmoke;
 }
 
@@ -419,6 +428,20 @@ footer a {
 footer a:hover{
     color: black;
     text-decoration: none;
+}
+
+#guestMusicAngpao {
+    display: grid;
+    grid-template-columns: 2fr 1fr / 1fr 1fr;
+    grid-template-areas: "guestList musicAngpao" "footer footer"
+}
+
+#guesList {
+    grid-area: guestList;
+}
+
+#mucicAngpao {
+    grid-area: musicAngpao;
 }
 
 /* End of footer */
@@ -594,41 +617,12 @@ footer a:hover{
 }
 
 @media only screen and (max-width: 800px) {
-    #guestList {
-        width: 100%;
-    }
-    #musicAngpao {
-        display: none;
-    }
+    
 
-    #musicAngpaoSmall {
-        display: block;
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: whitesmoke;
-    }
-
-    audio {
-        width: 100%;
-    }
-    footer {
-        background-color:rgb(170,189,169);
-    }
-    footer a {
-        color:whitesmoke
-    }
-}
-
-@media only screen and (min-width:450px) and (max-width:900px) {
-    form {
-        width: 75%;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    form {
-        width: 87%;
-    }
+    #guestMusicAngpao {
+        display: grid;
+        grid-template-columns: none; 
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "guestList" "musicAngpao" "footer"
+    } 
 }

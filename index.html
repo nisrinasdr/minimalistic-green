@@ -13,7 +13,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./resources/css/style.css">         
+        <link rel="stylesheet" href="./resources/css/style.css">     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+   
 
         <script src="./resources/js/index.js"></script>
         
@@ -27,10 +29,18 @@
                 <div id="theBride">
                     <img class="theBride" src="resources/images/the-bride.jpg" alt = "Lara Ayuningtyas"/>
                     <h2>Lara Ayuningtyas</h2>
+                    <div>
+                        <i class="fa fa-instagram"></i>
+                      <p style="display: inline; font-size: 15px;">instagramname</p>
+                    </div>
                 </div>
                 <div id="theGroom">
                     <img class="theGroom" src="resources/images/the-groom.jpg" alt = "Satria Adhara"/>
                     <h2>Satria Adhara</h2>
+                    <div>
+                        <i class="fa fa-instagram"></i>
+                      <p style="display: inline; font-size: 15px;">instagramname</p>
+                    </div>
                 </div>
                 <hr />
                 <div id="countdown">
@@ -38,7 +48,7 @@
                     <div id="countHour" class="count"></div>
                     <div id="countMinute" class="count"></div>
                     <div id="countSecond" class="count"></div>
-                    <p class="countP">to go</p>
+                    <div class="countP">to go</div>
                 </div>
             </div>
         </section>
@@ -54,7 +64,7 @@
                             <h2>Wedding Ceremony</h2>
                             <img class="decoration" src="resources/images/decoration.png" alt = ""/>
                             <p>
-                                Friday, 4th March 2021<br />
+                                Sunday, 5th Sept 2021<br />
                                 09:00 - 10:00<br />
                                 at Mosque X, Jakarta<br />
                             </p>
@@ -63,7 +73,7 @@
                             <h2>Reception</h2>
                             <img class="decoration" src="resources/images/decoration.png" alt = ""/>
                             <p>
-                                Friday, 4th March 2021<br />
+                                Sunday, 5th Sept 2021<br />
                                 10:00 - 15:00<br />
                                 at Hotel Gran Mahakam, Jakarta<br />
                             </p>
@@ -152,22 +162,23 @@
         <section id="guestMusicAngpao">
             <div id="guestList">
                 <h1>Guest List</h1>
-                <form>
+                <form name="submit-to-google-sheet" id="f">
                     <div id="formContainer">
                         <div class="form-group">
                             <img class="decoration" src="resources/images/decoration.png" alt = ""/>
-                            <label for="name">Name</label><br>
-                            <input type="text" id="name" name="name" class="form-control" required/>
+                            <label for="nama">Name</label><br>
+                            <input type="text" id="nama" name="nama" class="form-control" required/>
                         </div>
                         <div class="form-group">
                             <img class="decoration" src="resources/images/decoration.png" alt = ""/>
-                            <label for="message">Message</label><br>
-                            <textarea id="message" name="message" rows="5" cols="50" class="form-control" required></textarea>
+                            <label for="pesan">Message</label><br>
+                            <textarea id="pesan" name="pesan" rows="5" cols="50" class="form-control" required></textarea>
                         </div>
                         <div class="form-group">
-                            <select name="confirmation" id="confirmation" class="form-control" required>
-                                <option value="Hadir">I will be there</option>
+                            <select name="kehadiran" id="kehadiran" class="form-control" required>
+                                <option value="Ya">I will be there</option>
                                 <option value="Tidak Hadir">Sorry, I can't attend</option>
+                                <option value="Tidak Tahu">I am not sure yet</option>
                               </select>
                         </div>
                         <div class="form-group">
@@ -183,8 +194,8 @@
                         <img class="decoration" src="resources/images/decoration.png" alt = ""/>
                     </div>
                     
-                    <audio id="audioBig" controls controlsList="nodownload" loop> 
-                        <source src="resources/audio/bensound-sweet.mp3" type="audio/mpeg">
+                    <audio id="audioBig" controls controlsList="nodownload" autoplay loop> 
+                        <source src="resources/audio/bensound-romantic.mp3" type="audio/mpeg">
                       Your browser does not support the audio element.
                       </audio>
                 </div>
@@ -197,37 +208,41 @@
                     <img class="qrCode" src="resources/images/qrcode.png" alt = "angpao qr code"/>
                 </div>
             </div>
-        </section>
-        <!-- Angpao display for small screen -->
-        <section id="musicAngpaoSmall">
-            <div id="musicAngpaoSmallerSize">
-                <div id="music">
-                    <div class="title-text">
-                        <p class="title">Music</p>
-                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
-                    </div>
-                    
-                    <audio id="audioSmall" controls controlsList="nodownload" loop>
-                        <source src="/resources/audio/bensound-sweet.mp3" type="audio/mpeg" >
-                      Your browser does not support the audio element.
-                      </audio>
-                </div>
-                <div id="angpao">
-                    <div class="title-text">
-                        <p class="title">Angpao</p>
-                        <img class="decoration" src="resources/images/decoration.png" alt = ""/>
-                    </div>
-                    
-                    <img class="qrCode" src="resources/images/qrcode.png" alt = "angpao qr code"/>
-                </div>
-            </div>
+            <footer>
+                <a href="http://www.freepik.com"><small>Flower decoration designed by BiZkettE1 / Freepik</small></a>
+                <a href="www.bensound.com"><small> | Music from Bensound</small></a>
+            </footer>
         </section>
 
-        <footer>
-            <a href="http://www.freepik.com"><small>Flower decoration designed by BiZkettE1 / Freepik</small></a>
-            <a href="www.bensound.com"><small> | Music from Bensound</small></a>
-        </footer>
+        
 
-        <script src="./resources/js/audio.js"></script>
+        <script src="./resources/js/formToGoogleSheet.js"></script>
+        <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+        <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+        <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyec3Dkj1H5F3A99H8DGxspxM5ZAPfNukhxfO0WlmBqZVhVzdSyp0ApnCsuADPoDAM/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    swal({
+                        title: "Message sent!",
+                        icon: "success",
+                        button: "Ok",
+                    });
+                })
+            .catch(error => console.error('Error!', error.message))
+    
+            document.getElementById("nama").value = ""
+            document.getElementById("kehadiran").value = ""
+            document.getElementById("pesan").value = ""
+        })
+        </script>
+        
     </body>
 </html>
